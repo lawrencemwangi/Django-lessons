@@ -1,0 +1,34 @@
+{% load static  %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %} ">
+    <title>{% block title %} Ruby class {% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Ruby Class </h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'my_home' %}">Home</a></li>
+                <li><a href="{% url 'my_about' %}">About</a></li>
+                <li><a href="{% url 'my_service' %}">Service</a></li>
+                <li><a href="{% url 'my _contact' %}">Contact</a></li>
+                <li><a href="{% url 'my_blog' %}">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+
+        {% endblock %}   
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ruby class</p>
+    </footer>
+</body>
+</html>
