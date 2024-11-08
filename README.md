@@ -1,0 +1,1 @@
+### Django leaning lesson to understand the django python framework  
